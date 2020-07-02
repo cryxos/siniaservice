@@ -37,13 +37,16 @@ nav ul a {
     margin-right: auto;
 }
 
-.patreon {
-    display: inline-block;
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 20px;
+
+.patreon > li {
+    display: inline-block;  
+    zoom:1;
+    *display:inline; 
 }
 
+.patreon li {
+    padding-left: 20px;
+}
  
 
 .border{    
@@ -64,4 +67,20 @@ nav ul a {
 .des-service{
     padding-left: 3rem;
     padding-bottom: 2rem;
+}
+
+
+/* FOOTER */
+
+.footer .share {
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+}
+.share {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
