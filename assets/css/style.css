@@ -91,3 +91,19 @@ nav ul a {
 .mostrar{
     display: none;
 }
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+select {
+     display: block !important; 
+     width: 300px !important;
+     margin-left: 6% !important;
+}

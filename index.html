@@ -2,34 +2,41 @@
 <html lang="en">
   <head>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
- 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css?t=1" />
+    <link rel="stylesheet" href="assets/css/materialize.min.css" />
     <script src="assets/js/jquery.min.js"></script>
-    
+
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
   </head>
 
   <body>
-    
-    
-        <header>
-            <nav class="grey lighten-5 ">
-                <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><img src="assets/img/logo_sinia.png" height="50px" class="logo-position"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger grey"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down ">
-                    <li><a href="https://sinia.minam.gob.pe">Portal del</a></li>
-                    <li><a href="https://sigea.sinia.pe">SIGEA</a></li>
-                </ul>
-                </div>
-            </nav>
-            
-            <!--<ul class="sidenav" id="mobile-demo">
+    <header>
+      <nav class="grey lighten-5">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"
+            ><img
+              src="assets/img/logo_sinia.png"
+              height="50px"
+              class="logo-position"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger grey"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://sinia.minam.gob.pe">Portal del</a></li>
+            <li><a href="https://sigea.sinia.pe">SIGEA</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--<ul class="sidenav" id="mobile-demo">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#">MODULOS</a></li>
                 <li><a href="#">VISOR GEOBOSQUES</a></li>
@@ -38,587 +45,802 @@
                 <li><a href="#">ACERCA DE</a></li>
                 <li><a href="#">CONTACTO</a></li>
             </ul>-->
-        </header>
-    
+    </header>
+
     <main>
-    
-        <div class="parallax-containerx"> 
-            <div class="grid pad">
-              <center><h1 class="white-text">SERVICIOS WEB DEL SINIA</h1></center>
-              <!--<div class="bg" style="background-image: url(assets/img/img1.jpg)"></div>-->
-            </div>
-            
+      <div class="parallax-containerx">
+        <div class="grid pad">
+          <center><h1 class="white-text">SERVICIOS WEB DEL SINIA</h1></center>
+          <!--<div class="bg" style="background-image: url(assets/img/img1.jpg)"></div>-->
         </div>
-        <div class="detail grid pad">
-            <div class="row container"> 
-                <p class="grey-text text-darken-3 lighten-3">SERVICIOS WEB DE INFORMACIÓN AMBIENTAL Y COMPONENTES GRÁFICOS AMBIENTALES</p>
-                <a href="http://165.227.88.109:8380/">Obtener el Token de acceso</a>
+      </div>
+      <div class="detail grid pad">
+        <div class="row container">
+          <p class="grey-text text-darken-3 lighten-3">
+            SERVICIOS WEB DE INFORMACIÓN AMBIENTAL Y COMPONENTES GRÁFICOS
+            AMBIENTALES
+          </p>
+          <a href="http://165.227.88.109:8380/">Obtener el Token de acceso</a>
+        </div>
+        <p></p>
+      </div>
+
+      <section>
+        <div class="row">
+          <div class="col m4">
+            <ul class="collection with-header">
+              <li class="collection-header"><h5>API DOCUMENTOS</h5></li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="publicaciones()"
+                  >/api/documentos/publicaciones</a
+                >
+              </li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="normas()"
+                  >/api/documentos/normas</a
+                >
+              </li>
+            </ul>
+            <ul class="collection with-header">
+              <li class="collection-header"><h5>API ESTADÍSTICAS</h5></li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="indicadores()"
+                  >/api/indicadores</a
+                >
+              </li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="series()"
+                  >/api/indicadores/series</a
+                >
+              </li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="datos()"
+                  >/api/indicadores/datos</a
+                >
+              </li>
+            </ul>
+            <!--<ul class="collection with-header">
+              <li class="collection-header"><h5>API GEOESPACIAL</h5></li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="capas()">/api/capas</a>
+              </li>
+            </ul>-->
+            <ul class="collection with-header">
+              <li class="collection-header"><h5>COMPONENTES GRÁFICOS</h5></li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="uiIndicadores()"
+                  >/ui/indicadores</a
+                >
+              </li>
+              <li class="collection-item">
+                <button class="waves-effect waves-light btn blue">GET</button>
+                <a href="javascript:" onclick="uiIndicadoresRegional()"
+                  >/ui/regional</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col m8 border">
+            <div id="publicaciones" class="content-selection">
+              <div class="title-service">
+                Rest: publicaciones
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  http://165.227.88.109:8380/api/documentos/publicaciones
                 </div>
-            <p>
-            </p>
-        </div>  
-        
-        
-        <section>
-            <div class="row">
-                <div class="col m4">
-                    <ul class="collection with-header">
-                        <li class="collection-header"><h5>API DOCUMENTOS</h5></li> 
-                        <li class="collection-item">
-                            <button class="waves-effect waves-light btn blue" >GET</button>
-                            <a href="javascript:" onclick="publicaciones()">/api/documentos/publicaciones</a>
-                        </li> 
-                        <li class="collection-item">
-                            <button class="waves-effect waves-light btn blue">GET</button>
-                            <a href="javascript:" onclick="normas()">/api/documentos/normas</a>
-                        </li>  
-                    </ul> 
-                    <ul class="collection with-header">
-                        <li class="collection-header"><h5>API ESTADÍSTICAS</h5></li> 
-                        <li class="collection-item">
-                            <button class="waves-effect waves-light btn blue">GET</button>
-                            <a href="javascript:" onclick="indicadores()">/api/documentos/indicadores</a>
-                        </li> 
-                        <li class="collection-item">
-                            <button class="waves-effect waves-light btn blue">GET</button>
-                            <a href="javascript:" onclick="series()">/api/documentos/series</a>
-                        </li> 
-                        <li class="collection-item">
-                            <button class="waves-effect waves-light btn blue">GET</button>
-                            <a href="javascript:" onclick="datos()">/api/documentos/datos</a>
-                        </li> 
-                    </ul>
-                    <ul class="collection with-header">
-                      <li class="collection-header"><h5>API GEOESPACIAL</h5></li> 
-                      <li class="collection-item">
-                          <button class="waves-effect waves-light btn blue">GET</button>
-                          <a href="javascript:" onclick="indicadores()">/api/capas</a>
-                      </li>
-                  </ul>
-                  <ul class="collection with-header">
-                    <li class="collection-header"><h5>COMPONENTES GRÁFICOS</h5></li> 
-                    <li class="collection-item">
-                        <button class="waves-effect waves-light btn blue">GET</button>
-                        <a href="javascript:" onclick="indicadores()">/ui/indicadores</a>
-                    </li> 
-                    <li class="collection-item">
-                        <button class="waves-effect waves-light btn blue">GET</button>
-                        <a href="javascript:" onclick="series()">/ui/series</a>
-                    </li> 
-                </ul>
-                     
-                </div>
-                <div class="col m8 border">
-                    
-                    <div id="publicaciones" class="content-selection">
-                        
-                        <div class="title-service">
-                            Rest: publicaciones
-                        </div>
-                        <div class="des-service">
-                            <strong>Recurso</strong>
-                            <div class="card-panel grey lighten-3">http://165.227.88.109:8380/api/documentos/publicaciones</div>
-                        </div>
- 
-                        <div class="des-service">
-                            <strong>Descripción</strong>
-                            <p>Necesita una descripción.</p>
-                        </div>
+              </div>
 
-                        <div class="des-service">
-                            <strong>Credencial</strong>
-                            <p>No Aplica.</p>
-                        </div>
+              <div class="des-service">
+                <strong>Descripción</strong>
+                <p>Necesita una descripción.</p>
+              </div>
 
-                        <div class="des-service">
-                            <strong>Parámetros Request</strong>
+              <div class="des-service">
+                <strong>Credencial</strong>
+                <p>Token de acceso.</p>
+              </div>
 
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th> 
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>tematica</td> 
-                                    <td>String (query)</td>
-                                    <td>Tematica</td>
-                                  </tr>
-                                  <tr>
-                                    <td>ubigeo</td> 
-                                    <td>String (query)</td>
-                                    <td>Ubigeo</td>
-                                  </tr>
-                                </tbody>
-                            </table> 
+              <div class="des-service">
+                <strong>Parámetros Request</strong>
 
-                        </div>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tematica</td>
+                      <td>String (query)</td>
+                      <td>Tematica</td>
+                    </tr>
+                    <tr>
+                      <td>ubigeo</td>
+                      <td>String (query)</td>
+                      <td>Ubigeo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                        <div class="des-service">
-                            <strong>Response</strong>
-                            
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th>
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>tipo</td>
-                                    <td>String</td>
-                                    <td>Libro</td>
-                                  </tr>
-                                  <tr>
-                                    <td>fuente</td>
-                                    <td>Enlace</td>
-                                    <td>Programa de Naciones Unidas para el Medio Ambiente - PNUMA</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>id</td>
-                                    <td>Número</td>
-                                    <td>9681</td>
-                                  </tr>
-                                  <tr>
-                                    <td>url_caratula</td>
-                                    <td>Enlace</td>
-                                    <td>https://sinia.minam.gob.pe/sites/default/files/39547-0.jpg</td>
-                                  </tr>
-                                  <tr>
-                                    <td>nombre</td>
-                                    <td>String</td>
-                                    <td>América Latina y el Caribe - Atlas de un ambiente en transformación.</td>
-                                  </tr>
-                                  <tr>
-                                    <td>url</td>
-                                    <td>Enlace</td>
-                                    <td>https://sinia.minam.gob.pe/documentos/america-latina-caribe-atlas-un-ambiente-transformacion</td>
-                                  </tr>
-                                  <tr>
-                                    <td>fecha_publicacion</td>
-                                    <td>Date</td>
-                                    <td>2010-12-01T00:00:00.000+0000</td>
-                                  </tr>
+              <div class="des-service">
+                <strong>Response</strong>
 
-                                </tbody>
-                              </table>
-                        </div>
- 
-                    </div>
-
-                    <div id="normas" class="content-selection">
-                        
-                        <div class="title-service">
-                            Rest: normas
-                        </div>
-                        <div class="des-service">
-                            <strong>Recurso</strong>
-                            <div class="card-panel grey lighten-3">http://165.227.88.109:8380/api/documentos/normas</div>
-                        </div>
- 
-                        <div class="des-service">
-                            <strong>Descripción</strong>
-                            <p>Necesita una descripción.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Credencial</strong>
-                            <p>No Aplica.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Parámetros Request</strong>
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th> 
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>tematica</td> 
-                                    <td>String (query)</td>
-                                    <td>Tematica</td>
-                                  </tr>
-                                  <tr>
-                                    <td>ubigeo</td> 
-                                    <td>String (query)</td>
-                                    <td>Ubigeo</td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Response</strong>
-                            
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th>
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>id</td>
-                                        <td>Número</td>
-                                        <td>31837</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>nombre</td>
-                                        <td>String</td>
-                                        <td>Aprueban la “Lista Oficial de Especies Forestales”</td>
-                                    </tr>
-                                    <tr>
-                                        <td>descripcion</td>
-                                        <td>String</td>
-                                        <td>concesiones forestales, especies maderables</td>
-                                    </tr>
-                                    <tr>
-                                        <td>tipo</td>
-                                        <td>String</td>
-                                        <td>Resolución de Dirección Ejecutiva</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>numero</td>
-                                        <td>Número</td>
-                                        <td>118-2019-MINAGRI-SERFOR-DE</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>fuente</td>
-                                        <td>String</td>
-                                        <td>Servicio Nacional Forestal y de Fauna Silvestre - SERFOR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>url_caratula</td>
-                                        <td>enlace</td>
-                                        <td>https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/64408-0.jpg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>url</td>
-                                        <td>enlace</td>
-                                        <td>https://sinia.minam.gob.pe/normas/aprueban-lista-oficial-especies-forestales</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>fecha_aprobacion</td>
-                                        <td>Date</td>
-                                        <td>2019-05-29T00:00:00.000+0000</td>
-                                    </tr> 
-                                </tbody>
-                              </table>
-                        </div>
- 
-                    </div>
-  
-                    <div id="indicadores" class="content-selection">
-                        
-                        <div class="title-service">
-                            Rest: indicador
-                        </div>
-                        <div class="des-service">
-                            <strong>Recurso</strong>
-                            <div class="card-panel grey lighten-3">http://165.227.88.109:8380/api/indicadores</div>
-                        </div>
- 
-                        <div class="des-service">
-                            <strong>Descripción</strong>
-                            <p>Necesita una descripción.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Credencial</strong>
-                            <p>No Aplica.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Parámetros Request</strong>
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th> 
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>tematica</td> 
-                                    <td>String (query)</td>
-                                    <td>Tematica</td>
-                                  </tr>
-                                  <tr>
-                                    <td>ubigeo</td> 
-                                    <td>String (query)</td>
-                                    <td>Ubigeo</td>
-                                  </tr>
-                                </tbody>
-                            </table> 
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Response</strong>
-                            
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th>
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>id indicador</td>
-                                    <td>Número</td>
-                                    <td>Identificación de indicador</td>
-                                  </tr>
-                                  <tr>
-                                    <td>nombre</td>
-                                    <td>String</td>
-                                    <td>Nombre del indicador</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>fuente </td>
-                                    <td>String</td>
-                                    <td>Entidad que genera la fuente</td>
-                                  </tr>
-                                  <tr>
-                                    <td>dependencia </td>
-                                    <td>String</td>
-                                    <td>Dependencia responsable que genera el indicador</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Unidad </td>
-                                    <td>Número</td>
-                                    <td>Unidad de medida del indicador</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
- 
-                    </div>
-
-                    <div id="series" class="content-selection">
-                        
-                        <div class="title-service">
-                            Rest: Serie
-                        </div>
-                        <div class="des-service">
-                            <strong>Recurso</strong>
-                            <div class="card-panel grey lighten-3">No aplica </div>
-                        </div>
- 
-                        <div class="des-service">
-                            <strong>Descripción</strong>
-                            <p>Necesita una descripción.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Credencial</strong>
-                            <p>No Aplica.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Parámetros Request</strong>
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th> 
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody> 
-                                  <tr>
-                                    <td>indicador</td> 
-                                    <td>String (query)</td>
-                                    <td>Indicador</td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Response</strong>
-                            
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th>
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Id Indicador</td>
-                                    <td>Número</td>
-                                    <td>Identificador de serie</td>
-                                  </tr>
-                                  <tr>
-                                    <td>id_serie</td>
-                                    <td>Número</td>
-                                    <td>Identifciador de la serie.</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>id_periodo</td>
-                                    <td>Número</td>
-                                    <td>Periodo de generación del dato</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>id_ambito</td>
-                                    <td>Número</td>
-                                    <td>Ámbito de generación del dato</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>valor</td>
-                                    <td>Número</td>
-                                    <td>Valor numérico del dato</td>
-                                  </tr> 
-                                </tbody>
-                              </table>
-                        </div>
- 
-                    </div>
-                    
-                    <div id="datos" class="content-selection">
-                        
-                        <div class="title-service">
-                            Rest: Datos
-                        </div>
-                        <div class="des-service">
-                            <strong>Recurso</strong>
-                            <div class="card-panel grey lighten-3">http://165.227.88.109:8380/api/indicadores/datos</div>
-                        </div>
- 
-                        <div class="des-service">
-                            <strong>Descripción</strong>
-                            <p>Necesita una descripción.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Credencial</strong>
-                            <p>No Aplica.</p>
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Parámetros Request</strong>
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th> 
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>serie</td> 
-                                    <td>Integer($int32) (query)</td>
-                                    <td>Serie</td>
-                                  </tr>
-                                  <tr>
-                                    <td>ubigeo</td> 
-                                    <td>String (query)</td>
-                                    <td>Ubigeo</td>
-                                  </tr>
-                                </tbody>
-                            </table> 
-                        </div>
-
-                        <div class="des-service">
-                            <strong>Response</strong>
-                            
-                            <table class="responsive-table highlight">
-                                <thead class="grey">
-                                  <tr>
-                                      <th>Nombre</th>
-                                      <th>Tipo Dato</th>
-                                      <th>Descripción</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Id_Indicador</td>
-                                    <td>Número</td>
-                                    <td>Resultado de la operación; devuelve 1 si es éxito y -1 si se presentan errores</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Id_Serie</td>
-                                    <td>Número</td>
-                                    <td>Identifciador de la serie</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>Id_Periodo</td>
-                                    <td>Número</td>
-                                    <td>Periodo de generación del dato.</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>Id_Ambito</td>
-                                    <td>Número</td>
-                                    <td>Ámbito de generación del dato.</td>
-                                  </tr> 
-                                  <tr>
-                                    <td>Valor</td>
-                                    <td>Número</td>
-                                    <td>Valor numérico del dato.</td>
-                                  </tr> 
-                                </tbody>
-                              </table>
-                        </div>
- 
-                    </div>
-  
-                </div>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tipo</td>
+                      <td>String</td>
+                      <td>Libro</td>
+                    </tr>
+                    <tr>
+                      <td>fuente</td>
+                      <td>Enlace</td>
+                      <td>Fuente que genera la información</td>
+                    </tr>
+                    <tr>
+                      <td>id</td>
+                      <td>Número</td>
+                      <td>Identificador único</td>
+                    </tr>
+                    <tr>
+                      <td>url_caratula</td>
+                      <td>Enlace</td>
+                      <td>Ruta de la carátula</td>
+                    </tr>
+                    <tr>
+                      <td>nombre</td>
+                      <td>String</td>
+                      <td>Nombre de la publicación</td>
+                    </tr>
+                    <tr>
+                      <td>url</td>
+                      <td>Enlace</td>
+                      <td>Url del SINIA de la publicación</td>
+                    </tr>
+                    <tr>
+                      <td>fecha_publicacion</td>
+                      <td>Date</td>
+                      <td>Fecha de la publicación</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-        </section>
- 
+
+            <div id="normas" class="content-selection">
+              <div class="title-service">
+                Rest: normas
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  http://165.227.88.109:8380/api/documentos/normas
+                </div>
+              </div>
+
+              <div class="des-service">
+                <strong>Descripción</strong>
+                <p>Necesita una descripción.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Credencial</strong>
+                <p>Token de acceso.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Parámetros Request</strong>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tematica</td>
+                      <td>String (query)</td>
+                      <td>Tematica</td>
+                    </tr>
+                    <tr>
+                      <td>ubigeo</td>
+                      <td>String (query)</td>
+                      <td>Ubigeo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="des-service">
+                <strong>Response</strong>
+
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id</td>
+                      <td>Número</td>
+                      <td>Identificador único</td>
+                    </tr>
+                    <tr>
+                      <td>nombre</td>
+                      <td>String</td>
+                      <td>Nombre de la norma</td>
+                    </tr>
+                    <tr>
+                      <td>descripcion</td>
+                      <td>String</td>
+                      <td>Descripción de la norma</td>
+                    </tr>
+                    <tr>
+                      <td>tipo</td>
+                      <td>String</td>
+                      <td>Tipo de norma</td>
+                    </tr>
+                    <tr>
+                      <td>numero</td>
+                      <td>Número</td>
+                      <td>Némero de norma</td>
+                    </tr>
+                    <tr>
+                      <td>fuente</td>
+                      <td>String</td>
+                      <td>Fuente que genera la información</td>
+                    </tr>
+                    <tr>
+                      <td>url_caratula</td>
+                      <td>enlace</td>
+                      <td>Ruta de la carátula</td>
+                    </tr>
+                    <tr>
+                      <td>url</td>
+                      <td>enlace</td>
+                      <td>Ruta de la norma en el SINIA</td>
+                    </tr>
+                    <tr>
+                      <td>fecha_aprobacion</td>
+                      <td>Date</td>
+                      <td>Fecha de aprobación de la norma</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div id="indicadores" class="content-selection">
+              <div class="title-service">
+                Rest: indicador
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  http://165.227.88.109:8380/api/indicadores
+                </div>
+              </div>
+
+              <div class="des-service">
+                <strong>Descripción</strong>
+                <p>Necesita una descripción.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Credencial</strong>
+                <p>Token de acceso.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Parámetros Request</strong>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tematica</td>
+                      <td>String (query)</td>
+                      <td>Tematica</td>
+                    </tr>
+                    <tr>
+                      <td>ubigeo</td>
+                      <td>String (query)</td>
+                      <td>Ubigeo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="des-service">
+                <strong>Response</strong>
+
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id indicador</td>
+                      <td>Número</td>
+                      <td>Identificación de indicador</td>
+                    </tr>
+                    <tr>
+                      <td>nombre</td>
+                      <td>String</td>
+                      <td>Nombre del indicador</td>
+                    </tr>
+                    <tr>
+                      <td>fuente</td>
+                      <td>String</td>
+                      <td>Entidad que genera la fuente</td>
+                    </tr>
+                    <tr>
+                      <td>dependencia</td>
+                      <td>String</td>
+                      <td>Dependencia responsable que genera el indicador</td>
+                    </tr>
+                    <tr>
+                      <td>Unidad</td>
+                      <td>Número</td>
+                      <td>Unidad de medida del indicador</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div id="series" class="content-selection">
+              <div class="title-service">
+                Rest: Serie
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  http://165.227.88.109:8380/api/indicadores/series
+                </div>
+              </div>
+
+              <div class="des-service">
+                <strong>Descripción</strong>
+                <p>Necesita una descripción.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Credencial</strong>
+                <p>Token de acceso.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Parámetros Request</strong>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>indicador</td>
+                      <td>String (query)</td>
+                      <td>Indicador</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="des-service">
+                <strong>Response</strong>
+
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Id Indicador</td>
+                      <td>Número</td>
+                      <td>Identificador de serie</td>
+                    </tr>
+                    <tr>
+                      <td>id_serie</td>
+                      <td>Número</td>
+                      <td>Identifciador de la serie.</td>
+                    </tr>
+                    <tr>
+                      <td>id_periodo</td>
+                      <td>Número</td>
+                      <td>Periodo de generación del dato</td>
+                    </tr>
+                    <tr>
+                      <td>id_ambito</td>
+                      <td>Número</td>
+                      <td>Ámbito de generación del dato</td>
+                    </tr>
+                    <tr>
+                      <td>valor</td>
+                      <td>Número</td>
+                      <td>Valor numérico del dato</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div id="datos" class="content-selection">
+              <div class="title-service">
+                Rest: Datos
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  http://165.227.88.109:8380/api/indicadores/datos
+                </div>
+              </div>
+
+              <div class="des-service">
+                <strong>Descripción</strong>
+                <p>Necesita una descripción.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Credencial</strong>
+                <p>Token de acceso.</p>
+              </div>
+
+              <div class="des-service">
+                <strong>Parámetros Request</strong>
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>serie</td>
+                      <td>Integer($int32) (query)</td>
+                      <td>Serie</td>
+                    </tr>
+                    <tr>
+                      <td>ubigeo</td>
+                      <td>String (query)</td>
+                      <td>Ubigeo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="des-service">
+                <strong>Response</strong>
+
+                <table class="responsive-table highlight">
+                  <thead class="grey">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo Dato</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Id_Indicador</td>
+                      <td>Número</td>
+                      <td>Identificador del indentificador</td>
+                    </tr>
+                    <tr>
+                      <td>Id_Serie</td>
+                      <td>Número</td>
+                      <td>Identifciador de la serie</td>
+                    </tr>
+                    <tr>
+                      <td>Id_Periodo</td>
+                      <td>Número</td>
+                      <td>Periodo de generación del dato.</td>
+                    </tr>
+                    <tr>
+                      <td>Id_Ambito</td>
+                      <td>Número</td>
+                      <td>Ámbito de generación del dato.</td>
+                    </tr>
+                    <tr>
+                      <td>Valor</td>
+                      <td>Número</td>
+                      <td>Valor numérico del dato.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div id="ui_indicadores" class="content-selection">
+              <div class="title-service">
+                Componente de Indicadores Ambientales del SINIA
+              </div>
+              <div class="des-service">
+                <strong>Recurso</strong>
+                <div class="card-panel grey lighten-3">
+                  https://indicadores-sinia.netlify.app/
+                </div>
+              </div>
+              <div class="title-service">
+                <iframe
+                  src="https://indicadores-sinia.netlify.app/"
+                  style="border: 0px #ffffff none;"
+                  name="myiFrame"
+                  scrolling="yes"
+                  frameborder="1"
+                  marginheight="0px"
+                  marginwidth="0px"
+                  height="700px"
+                  width="100%"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div id="ui_regional" class="content-selection">
+              <div class="title-service">
+                Componente de Indicadores Regionales del SINIA
+              </div>
+              <div class="des-service">
+                <div class="card-panel grey lighten-3">
+                  <strong>Genera ruta por Región : </strong>
+                  <br />
+                  <select
+                    name="depa"
+                    class="select2_single form-control"
+                    id="selectDepartamento"
+                    tabindex="-1"
+                    required=""
+                  >
+                    <option
+                      value="Amazonas"
+                      latitud="-9.40774820821804"
+                      longitud="-77.6699372928246"
+                      >Amazonas</option
+                    >
+                    <option
+                      value="Ancash"
+                      latitud="-15.8429236683838"
+                      longitud="-72.4762341393312"
+                      >Ancash</option
+                    >
+                    <option
+                      value="Apurímac"
+                      latitud="-11.9399709062512"
+                      longitud="-77.125627626579"
+                      selected
+                      >Apurímac</option
+                    >
+                    <option
+                      value="Arequipa"
+                      latitud="-14.2343039982631"
+                      longitud="-75.573583828412"
+                      >Arequipa</option
+                    >
+                    <option
+                      value="Ayacucho"
+                      latitud="-7.92141288384388"
+                      longitud="-78.3683383484094"
+                      >Ayacucho</option
+                    >
+                    <option
+                      value="Cajamarca"
+                      latitud="-6.35182882707465"
+                      longitud="-79.8233243937552"
+                      >Cajamarca</option
+                    >
+                    <option
+                      value="Callao"
+                      latitud="-11.7864348837488"
+                      longitud="-76.626463371202"
+                      >Callao</option
+                    >
+                    <option
+                      value="Cusco"
+                      latitud="-16.8598296116552"
+                      longitud="-70.8384240611948"
+                      >Cusco</option
+                    >
+                    <option
+                      value="Huancavelica"
+                      latitud="-5.13194234080656"
+                      longitud="-80.3345214962653"
+                      >Huancavelica</option
+                    >
+                    <option
+                      value="Huánuco"
+                      latitud="-17.6447171638071"
+                      longitud="-70.2769612628704"
+                      >Huánuco</option
+                    >
+                    <option
+                      value="Ica"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Ica</option
+                    >
+                    <option
+                      value="Junín"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Junín</option
+                    >
+                    <option
+                      value="La Libertad"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >La Libertad</option
+                    >
+                    <option
+                      value="Lambayeque"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Lambayeque</option
+                    >
+                    <option
+                      value="Lima"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Lima</option
+                    >
+                    <option
+                      value="Loreto"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Loreto</option
+                    >
+                    <option
+                      value="Madre de Dios"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Madre de Dios</option
+                    >
+                    <option
+                      value="Moquegua"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Moquegua</option
+                    >
+                    <option
+                      value="Pasco"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Pasco</option
+                    >
+                    <option
+                      value="Piura"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Piura</option
+                    >
+                    <option
+                      value="Puno"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Puno</option
+                    >
+                    <option
+                      value="San Martín"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >San Martín</option
+                    >
+                    <option
+                      value="Tacna"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Tacna</option
+                    >
+                    <option
+                      value="Tumbes"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Tumbes</option
+                    >
+                    <option
+                      value="Ucayali"
+                      latitud="-3.85634757727674"
+                      longitud="-80.5445771828799"
+                      >Ucayali</option
+                    >
+                  </select>
+
+                  <br />
+                  <span id="url_region">https://sinia-regional.netlify.app/?region=apurimac</span>
+                </div>
+              </div>
+              <div class="title-service">
+                <iframe
+                 id="block_region"
+                  src="https://sinia-regional.netlify.app/?region=apur%C3%ADmac"
+                  style="border: 0px #ffffff none;"
+                  name="myiFrame"
+                  scrolling="yes"
+                  frameborder="1"
+                  marginheight="0px"
+                  marginwidth="0px"
+                  height="700px"
+                  width="100%"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-        <footer class="page-footer grey lighten-2">
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 input-field" style="text-align:center">
-                         
-                        <ul class="share"> 
-                            <li>			   
-                                <a href="#" target="_blank"> 
-                                    <img src="assets/img/facebook.png" height="30px" />
-                                </a>
-                            </li>  
-                        </ul>
-                    </div>
-                </div>
-                <hr/>
-                <div class="row">
-                    <div class="col s12"> 
-                        <p class="black-text text-lighten-4">
-                        Copyright © 2017 - GEOBOSQUES - todos los derechos reservados
-                        Programa Nacional de Conservación de Bosques para la Mitigación 
-                        del Cambio Climático Av. República de Panamá N° 3030, Piso 14, 
-                        San Isidro. Central Telefónica: (+511) 500 9200</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="footer-copyright">
-             
-            </div>
-               
-        </footer>
- 
-        <script src="assets/js/materialize.min.js"></script>
-        <script src="assets/js/app.js" ></script>
 
+    <footer class="page-footer grey lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 input-field" style="text-align: center;">
+            <ul class="share">
+              <li>
+                <a href="#" target="_blank">
+                  <img src="assets/img/facebook.png" height="30px" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col s12">
+            <p class="black-text text-lighten-4">
+              Copyright © 2017 - GEOBOSQUES - todos los derechos reservados
+              Programa Nacional de Conservación de Bosques para la Mitigación
+              del Cambio Climático Av. República de Panamá N° 3030, Piso 14, San
+              Isidro. Central Telefónica: (+511) 500 9200
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright"></div>
+    </footer>
+
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/app.js?t=2"></script>
   </body>
 </html>
-      
